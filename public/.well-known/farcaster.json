@@ -1,0 +1,26 @@
+import { NextResponse } from 'next/server';
+export const dynamic = 'force-static';
+
+const manifest = {
+  accountAssociation: { header: '', payload: '', signature: '' },
+  miniapp: {
+    version: '1',
+    name: 'Base Check-In',
+    subtitle: 'Daily streak tracker on Base',
+    description: 'Check in once a day on-chain and keep your streak alive.',
+    iconUrl: 'https://checkin-base.vercel.app/favicon.ico',
+    splashImageUrl: 'https://checkin-base.vercel.app/og.png',
+    splashBackgroundColor: '#000000',
+    homeUrl: 'https://checkin-base.vercel.app/',
+    webhookUrl: 'https://checkin-base.vercel.app/api/webhook',
+    primaryCategory: 'social',
+    tags: ['base', 'checkin', 'onchain', 'streak'],
+    developer: { name: 'Base Builder', url: 'https://checkin-base.vercel.app/' }
+  }
+};
+
+export function GET() {
+  return NextResponse.json(manifest, {
+    headers: { 'Cache-Control': 'public, max-age=300, must-revalidate' }
+  });
+}
