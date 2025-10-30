@@ -13,7 +13,12 @@
     "splashImageUrl": "https://checkin-base.vercel.app/og.png",
     "splashBackgroundColor": "#000000",
     "homeUrl": "https://checkin-base.vercel.app/",
+    "webhookUrl": "https://checkin-base.vercel.app/api/webhook",
     "primaryCategory": "social",
-    "tags": ["base", "checkin", "onchain", "streak"]
+    "tags": ["base", "checkin", "onchain", "streak"],
+    "developer": {
+      "name": "Base Builder",
+      "url": "https://checkin-base.vercel.app/"
+    }
   }
 }
