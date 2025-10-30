@@ -4,19 +4,19 @@ import { Toaster } from 'react-hot-toast';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://checkin-base.vercel.app'), // твой прод-домен
+  metadataBase: new URL('https://checkin-base.vercel.app'),
   title: 'Base Check-In',
   description: 'Daily on-chain check-ins on Base',
   openGraph: {
     title: 'Base Check-In',
     description: 'Daily on-chain check-ins on Base',
     url: 'https://checkin-base.vercel.app',
-    images: ['/blue-hero.png'], // OG для превью вне Farcaster
+    images: ['/blue-hero.png'], // стандартное превью для OG
   },
   other: {
     'fc:miniapp': JSON.stringify({
       version: 'next',
-      imageUrl: 'https://checkin-base.vercel.app/blue-hero.png',
+      imageURL: 'https://checkin-base.vercel.app/blue-hero.png', // ключ строго imageURL!
       button: {
         title: 'Open App',
         action: {
@@ -28,7 +28,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
