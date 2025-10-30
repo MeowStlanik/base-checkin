@@ -19,6 +19,9 @@
     "developer": {
       "name": "Base Builder",
       "url": "https://checkin-base.vercel.app/"
+    },
+    "baseBuilder": {
+      "ownerAddress": "0x7e162f5c52047790Ef51c29989Ac13feB9381813"
     }
   }
 }
