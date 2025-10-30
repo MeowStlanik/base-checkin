@@ -1,0 +1,16 @@
+{
+  "name": "Base Check-In",
+  "short_name": "Check-In",
+  "description": "Daily on-chain check-ins on Base. Track your streak.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0052ff",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
