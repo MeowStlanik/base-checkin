@@ -1,25 +1,27 @@
 {
-  "version": "1",
-  "name": "Base Check-In",
-  "subtitle": "Daily streak tracker on Base",
-  "description": "Check in once a day on-chain and keep your streak alive.",
-  "icon": "https://checkin-base.vercel.app/blue-icon.png",
-  "splash_image": "https://checkin-base.vercel.app/blue-hero.png",
-  "splash_background_color": "#000000",
-  "home_url": "https://checkin-base.vercel.app/",
-  "webhook_url": "https://checkin-base.vercel.app/api/webhook",
-  "primary_category": "social",
-  "tags": ["base", "checkin", "onchain", "streak"],
-  "developer": {
-    "name": "Base Builder",
-    "url": "https://checkin-base.vercel.app/"
-  },
-  "base_builder": {
-    "owner_address": "0x7e162f5c52047790Ef51c29989Ac13feB9381813"
-  },
-  "account_association": {
+  "accountAssociation": {
     "header": "eyJmaWQiOjczNjk2NywidHlwZSI6ImF1dGgiLCJrZXkiOiIweGMxMDYwM0M0MEZjZjI3RDI4OTJEOThkMGExYjMzNTU0ZDlCM0U4NTcifQ",
     "payload": "eyJkb21haW4iOiJjaGVja2luLWJhc2UudmVyY2VsLmFwcCJ9",
     "signature": "vkJ+QEwWrnVSqchhb7c8YHVKSw/Fuf3lumQdO1VbbGA5URraQJdGK6S10xgHR32qxn9tfDCg9d5LwjM5SvepWBs="
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "Base Check-In",
+    "subtitle": "Daily streak tracker on Base",
+    "description": "Check in once a day on-chain and keep your streak alive.",
+    "iconUrl": "https://checkin-base.vercel.app/blue-icon.png",
+    "splashImageUrl": "https://checkin-base.vercel.app/blue-hero.png",
+    "splashBackgroundColor": "#000000",
+    "homeUrl": "https://checkin-base.vercel.app/",
+    "webhookUrl": "https://checkin-base.vercel.app/api/webhook",
+    "primaryCategory": "social",
+    "tags": ["base", "checkin", "onchain", "streak"],
+    "developer": {
+      "name": "Base Builder",
+      "url": "https://checkin-base.vercel.app/"
+    }
+  },
+  "baseBuilder": {
+    "ownerAddress": "0x7e162f5c52047790Ef51c29989Ac13feB9381813"
   }
 }
