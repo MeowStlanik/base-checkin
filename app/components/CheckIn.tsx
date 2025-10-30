@@ -275,9 +275,7 @@ export default function CheckIn() {
       } else if (err instanceof BaseError) {
         const rev = err.walk(e => e instanceof ContractFunctionRevertedError);
         if (rev) {
-          const name = (rev as ContractFunctionRevertedError).name;
-          const args = ((rev as ContractFunctionRevertedError).args ?? []).map(String).join(', ');
-          reason = name ? `${name}${args ? ` (${args})` : ''}` : 'Contract reverted';
+          reason = (rev as any).shortMessage || 'Contract reverted';
         } else {
           reason = err.shortMessage || err.message;
         }
